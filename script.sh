@@ -132,4 +132,27 @@ cd tasks
 sudo chmod u=rwx,g=rx,o= task1-ps.pdf
 sudo chgrp mentee submissions
 sudo chmod u=rx,g=rwx,o=rx submissions
-cd..
+cd ..
+
+
+
+
+# putting dummy data in grades
+cd grades
+su mentee1
+echo "please login as mentee1 to proceed with searching"
+
+echo "mentee1 50" > task1-grades.txt
+echo "mentee2 60" >> task1-grades.txt
+echo "mentee3 70" >> task1-grades.txt
+echo "mentee4 80" >> task1-grades.txt
+echo "mentee5 70" >> task1-grades.txt
+echo "mentee11 80" >> task1-grades.txt
+echo "mentee12 50" >> task1-grades.txt
+echo "mentee13 90" >> task1-grades.txt
+echo "mentee14 60" >> task1-grades.txt
+echo "mentee15 30" >> task1-grades.txt
+
+
+echo "printing the information of students whos score is greater than 60"
+awk '$2 > 60' task1-grades.txt

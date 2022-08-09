@@ -1,0 +1,10 @@
+mentee1 50
+mentee2 60
+mentee3 70
+mentee4 80
+mentee5 70
+mentee11 80
+mentee12 50
+mentee13 90
+mentee14 60
+mentee15 30
